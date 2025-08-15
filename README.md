@@ -1,12 +1,14 @@
 # n8n + Open WebUI — One-Shot Installer (Ubuntu 22.04 / 24.04)
 
 Spin up **n8n** and **Open WebUI** on a fresh Ubuntu server in one shot.  
-The script installs Docker, configures persistent storage, opens firewall ports (when UFW is active), and drops an updater script.
+The installer sets up Docker, creates persistent storage, opens firewall ports (if UFW is active), and places an updater script.
 
 > ✅ Tested on **Ubuntu 22.04 (Jammy)** and **Ubuntu 24.04 (Noble)**  
 > 🐳 Uses Docker + Docker Compose plugin  
 > 🔁 Persistent volumes + restart policy  
-> 🛡️ UFW ports opened automatically if UFW is active (5678, 8080)
+> 🍪 Defaults to `N8N_SECURE_COOKIE=false` so HTTP works immediately on port **5678**  
+> 🛡️ UFW ports opened automatically if active (**5678**, **8080**)  
+> 🔐 Reverse-proxy (HTTPS) guides for **Caddy** and **Traefik** included
 
 ---
 
