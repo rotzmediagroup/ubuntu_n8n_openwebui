@@ -17,4 +17,5 @@ The installer sets up Docker, creates persistent storage, opens firewall ports (
 SSH into your **fresh** Ubuntu 22.04/24.04 server and run:
 
 ```bash
-sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/rotzmediagroup/ubuntu_n8n_openwebui/main/install_n8n_openwebui.sh -o install_n8n_openwebui.sh && chmod +x install_n8n_openwebui.sh && ./install_n8n_openwebui.sh'
+sudo bash -c 'curl -fsSL https://raw.githubusercontent.com/rotzmediagroup/ubuntu_n8n_openwebui/main/install.sh -o /root/install.sh && chmod +x /root/install.sh && /root/install.sh'
+
